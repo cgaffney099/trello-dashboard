@@ -51,7 +51,7 @@ body {
   transition: all linear 0.25s;
 }
 
-.panel.ng-hide {
+.panel.ng-hide { Board size is
   opacity: 0;
 }
 
@@ -62,5 +62,22 @@ body {
   .container {
     width: 100%;
     padding: 0 50px;
+  }
+  /* Show more columns on larger screens */
+  .row {
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  /* Show more columns on larger screens */
+  .row {
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
   }
 }
